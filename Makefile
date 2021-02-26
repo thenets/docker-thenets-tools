@@ -1,7 +1,7 @@
 IMAGE_TAG=thenets/tools
 
 build:
-	docker build -q -t $(IMAGE_TAG) .
+	docker build -t $(IMAGE_TAG) .
 
 run:
 	docker run -it --rm \

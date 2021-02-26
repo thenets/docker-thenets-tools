@@ -2,7 +2,7 @@
 
 Common packages used for troubleshooting.
 
-## Examples
+## Usage examples
 
 ```bash
 # Shell with many tools
