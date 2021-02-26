@@ -8,9 +8,10 @@ RUN set -x \
         openssh-client rsync \
         make socat bash
 
-ENTRYPOINT [ "bash" ]
+CMD [ "bash" ]
 
 WORKDIR /root
 
 COPY ./.bashrc ./
+
 COPY ./examples .
