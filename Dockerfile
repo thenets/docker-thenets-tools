@@ -11,11 +11,7 @@ RUN set -x \
 
 RUN set -x \
     # Add bash autocompletion
-    && apk add bash-doc bash-completion \
-    # Install kubectl
-    && cd /usr/local/bin/ \
-    && curl -sLO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" \
-    && chmod +x /usr/local/bin/kubectl
+    && apk add bash-doc bash-completion
 
 CMD [ "bash" ]
 
